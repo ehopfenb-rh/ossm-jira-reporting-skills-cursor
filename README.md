@@ -9,13 +9,18 @@ Cursor Agent Skills for automated status reporting on the **Red Hat OpenShift Se
 | Skill | Description |
 |-------|-------------|
 | [ossm-weekly-status](ossm-weekly-status/SKILL.md) | Generate a weekly status report from Jira and Product Pages, export to Google Docs and email |
+| [ossm-operator-initiatives](ossm-operator-initiatives/SKILL.md) | Analyze OCP Operator Portfolio Alignment and update OSSM tracking spreadsheet |
+
+## Related Repos
+
+- [ossm-vuln-cve-reports](https://github.com/ehopfenb-rh/ossm-vuln-cve-reports) — Vulnerability summary and CVE report skills
 
 ## Setup
 
 Clone this repo into your Cursor skills directory:
 
 ```bash
-git clone https://github.com/ehopfenb-rh/ossm-jira-reporting-skills-cursor.git ~/.cursor/skills/ossm-jira-reporting-skills-cursor
+git clone git@github.com:ehopfenb-rh/ossm-jira-reporting-skills-cursor.git ~/.cursor/skills/ossm-jira-reporting-skills-cursor
 ```
 
 All skills inside will be automatically available in every Cursor workspace.
@@ -34,9 +39,7 @@ Open any Cursor chat and say:
 
 - "Run my OSSM status report"
 - "Generate OSSM weekly status"
-- "Pull my OSSM program update"
-
-The skill will pull data from Jira and Product Pages, generate an interactive canvas, export a formatted Google Doc, and provide the link.
+- "Update operator initiatives"
 
 ## Contributing
 
